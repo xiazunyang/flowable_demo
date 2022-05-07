@@ -1,0 +1,16 @@
+{
+  "key": "loan_request_approve",
+  "name": "申请贷款发起表单",
+  "description": "申请贷款发起表单",
+  "fields": [
+    {
+      "id": "approved",
+      "name": "审批通过",
+      "type": "boolean",
+      "required": "true",
+      "layout": {
+        "row": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "7fe27c7f-cdbf-4622-9251-dee1f52282f2",
+		"name": "flowable",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "start loan request process instance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Xiazunyang-LoanRequest-2022/04/28-1\",\n    \"processDefinitionKey\": \"LoanRequestProcess\",\n    \"startFormVariables\": [\n        {\n            \"name\": \"customerName\",\n            \"type\": \"string\",\n            \"value\": \"Xiazunyang\"\n        },\n        {\n            \"name\": \"amount\",\n            \"type\": \"long\",\n            \"value\": 1200\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/runtime/process-instances",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"runtime",
+						"process-instances"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

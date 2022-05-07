@@ -1,0 +1,27 @@
+{
+  "key": "loan_request_start",
+  "name": "申请贷款发起表单",
+  "description": "申请贷款发起表单",
+  "fields": [
+    {
+      "id": "customerName",
+      "name": "申请人",
+      "type": "string",
+      "required": "true",
+      "placeholder": "您的姓名",
+      "layout": {
+        "row": 0
+      }
+    },
+    {
+      "id": "amount",
+      "name": "贷款金额",
+      "type": "long",
+      "required": "true",
+      "placeholder": "请输入贷款金额",
+      "layout": {
+        "row": 1
+      }
+    }
+  ]
+}
